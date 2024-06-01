@@ -9,7 +9,7 @@ const Home = () => {
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
             <div className='flex flex-col justify-center h-full'>
                 <h2 className='text-4xl sm:text-7xl font-bold text-white'>I'm a Web Developer</h2>
-                <p className='text-gray-500 py-4 mx-w-md'>Pursuing a B.Sc. in Computer Science at the University of Delhi, I thrive on creating impactful web solutions. My experience includes developing sophisticated web applications and collaborating with global teams to enhance user experiences.</p>
+                <p className='text-gray-500 py-4 mx-w-md'>Ready to bring innovative solutions to your team, leveraging my expertise in front-end development, project management, and strategic technology implementation to drive impactful results and elevate your digital presence. Connect with me today to transform your vision into reality.</p>
                 <div>
                     <Link to='Portfolio' smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>Portfolio 
                         <span className='group-hover:rotate-90 duration-300'><MdKeyboardArrowRight size={25} className='ml-1'/></span>

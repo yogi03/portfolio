@@ -8,17 +8,19 @@ const About = () => {
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>About</p>
             </div>
             <p className='text-xl mt-20'>
-                Hello, I'm Yogendra Chaurasiya, an aspiring Computer Science student on track to graduate in 2025 with a B.Sc. Hons. I'm driven by a relentless desire for self-improvement and a commitment to excellence in my work.
-                As a lifelong learner, I'm currently immersed in my journey of knowledge acquisition. My primary interests lie in the realms of full-stack web development, software development, Data Structures and Algorithms (DSA), Python programming, Operating Systems, SEO, and data science. 
+            Hello, I'm Yogendra Chaurasiya, a Computer Science student at the University of Delhi, set to graduate in 2025 with a B.Sc. (Hons). 
+            I am passionate about full-stack web development, software development, C++, Data Structures and Algorithms (DSA) and Python programming. 
             </p>
             <br />
-            <p className='text-xl'>    
-                What fuels my passion is the ever-evolving world of programming languages and cutting-edge technologies. I thrive on staying up-to-date with industry trends and embracing new challenges to continuously enhance my skill set.
-                I firmly believe that learning is a lifelong endeavor, and I am wholeheartedly committed to investing in my self-development to not only meet the demands of the dynamic tech landscape but also to exceed them. I am eager to contribute my evolving skills and unwavering dedication to any opportunity that comes my way.
+            <p className='text-xl'> 
+            My technical expertise includes HTML, CSS, JavaScript, Flask, SQLite and Django demonstrated through projects like a Real Estate Website and an Online Voting Portal.   
+            I hold certifications in Python Problem Solving from HackerRank, Full Stack Web Development from Udemy, and C++ from CodeChef. 
+            As the Tech Head at 180 Degrees Consulting, I develop and implement technology strategies.
             </p>
             <br />
             <p className='text-xl'>      
-                Let's connect and explore how we can collaborate and grow together in this exciting world of technology. Feel free to reach out – I'm always up for a good challenge and a great conversation!
+            My commitment to continuous learning and self-improvement drives me to stay updated with industry trends and embrace new challenges. Let's connect and explore how we can collaborate in the exciting world of technology. 
+            Feel free to reach out – I'm always ready for a meaningful challenge and a great conversation!
             </p>
         </div>
     </div>

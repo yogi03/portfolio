@@ -10,6 +10,7 @@ import django from '../assets/django.png';
 import mysql from '../assets/mysql.png';
 import python from '../assets/python.png';
 import cpp from '../assets/cpp.png';
+import PostgreSQL from '../assets/PostgreSQL.png';
 import github from '../assets/github.png';
 
 const Experience = () => {

@@ -82,6 +82,12 @@ const Experience = () => {
     },
     {
       id: 12,
+      src: PostgreSQL,
+      title: 'PostgreSQL',
+      style: 'shadow-blue-600',
+    },
+    {
+      id: 13,
       src: github,
       title: 'GitHub',
       style: 'shadow-gray-400',

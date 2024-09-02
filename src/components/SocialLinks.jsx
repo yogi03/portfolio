@@ -10,7 +10,7 @@ const SocialLinks = () => {
             child: (
                 <> LinkedIn <FaLinkedin size={30} /> </>
             ), 
-            href: "https://www.linkedin.com/in/yogendra-chaurasiya/",
+            href: "https://www.linkedin.com/in/yogendra30/",
             style: "rounded-tr-md" 
         },
         {
@@ -18,7 +18,7 @@ const SocialLinks = () => {
             child: (
                 <> GitHub <FaGithub size={30} /> </>
             ), 
-            href: "https://github.com/YogendraChaurasiya",
+            href: "https://github.com/yogi03",
         },
         {
             id: 3,

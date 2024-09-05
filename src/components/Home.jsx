@@ -4,10 +4,10 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from 'react-scroll';
 
 const Home = () => {
-  const [currentWord, setCurrentWord] = useState("Developer");
+  const [currentWord, setCurrentWord] = useState("Student");
 
   useEffect(() => {
-    const words = ["Developer", "Programmer", "Student", "Project Leader"]; // Move words array inside useEffect
+    const words = ["Student", "Programmer", "Developer", "Project Leader"]; // Move words array inside useEffect
     const wordInterval = setInterval(() => {
       setCurrentWord((prevWord) => {
         const currentIndex = words.indexOf(prevWord);

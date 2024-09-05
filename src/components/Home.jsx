@@ -5,9 +5,9 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
   const [currentWord, setCurrentWord] = useState("Developer");
-  const words = ["Developer", "Programmer", "Student", "Project Leader"];
 
   useEffect(() => {
+    const words = ["Developer", "Programmer", "Student", "Project Leader"]; // Move words array inside useEffect
     const wordInterval = setInterval(() => {
       setCurrentWord((prevWord) => {
         const currentIndex = words.indexOf(prevWord);
@@ -17,7 +17,7 @@ const Home = () => {
     }, 3000);
 
     return () => clearInterval(wordInterval);
-  }, [words]); // Include words in the dependency array
+  }, []); // No need to include words in the dependency array
 
   return (
     <div name="Home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>

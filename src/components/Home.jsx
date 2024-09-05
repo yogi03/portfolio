@@ -14,10 +14,10 @@ const Home = () => {
         const nextIndex = (currentIndex + 1) % words.length;
         return words[nextIndex];
       });
-    }, 3000); // Change word every 3 seconds
+    }, 3000);
 
-    return () => clearInterval(wordInterval); // Cleanup on component unmount
-  }, []);
+    return () => clearInterval(wordInterval);
+  }, [words]); // Include words in the dependency array
 
   return (
     <div name="Home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
@@ -43,7 +43,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Adding CSS for fade effect */}
       <style jsx>{`
         .fade-in-out {
           opacity: 0;

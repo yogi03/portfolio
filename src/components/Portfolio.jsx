@@ -2,7 +2,7 @@ import React from 'react'
 import tindog from '../assets/tindog.png'
 import real_estate from '../assets/real_estate.png'
 import online_voting from '../assets/online_voting.png'
-import trn from '../assets/trn.png'
+import bi from '../assets/bi.png'
 import social from '../assets/social.png'
 import memoir from '../assets/memoir.png'
 
@@ -26,7 +26,7 @@ const Portfolio = () => {
                         </a>
                     </div>
                 </div>
-                
+
                 <div className='shadow-md shadow-gray-600 rounded-lg'>
                     <img src={tindog} alt="Tindog" className='rounded-md duration-200 hover:scale-105'/>
                     <div className='flex items-center justify-center'>

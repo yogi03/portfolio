@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 /* Signature */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -10,7 +11,8 @@
 @layer base {
   html {
     /* font-family: "Raleway", sans-serif; */
-    font-family: "Gorditas", serif;
+    /* font-family: "Gorditas", serif; */
+    font-family: "Oswald", sans-serif;
   }
 
   @keyframes fadeIn {

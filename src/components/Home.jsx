@@ -7,7 +7,7 @@ const Home = () => {
   const [currentWord, setCurrentWord] = useState("Student");
 
   useEffect(() => {
-    const words = ["Student", "Programmer", "Developer", "Project Leader"]; // Move words array inside useEffect
+    const words = ["Student", "Programmer", "Developer", "Project Leader"];
     const wordInterval = setInterval(() => {
       setCurrentWord((prevWord) => {
         const currentIndex = words.indexOf(prevWord);
@@ -17,7 +17,7 @@ const Home = () => {
     }, 3000);
 
     return () => clearInterval(wordInterval);
-  }, []); // No need to include words in the dependency array
+  }, []);
 
   return (
     <div name="Home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>

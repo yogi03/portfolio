@@ -24,6 +24,8 @@ const iconSlugs = [
   "gitlab",
   "netlify",
   "vercel",
+  "firebase",
+  "firestore",
 ];
 
 const Experience = () => {

@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { SiLeetcode, SiGeeksforgeeks } from 'react-icons/si';
 
 const Contact = () => {
   const form = useRef();
@@ -45,12 +46,26 @@ const Contact = () => {
     {
       id: 3,
       child: (
+          <> LeetCode <SiLeetcode size={30} /> </>
+      ),
+      href: "https://leetcode.com/u/yogi30/",
+    },
+    {
+      id: 4,
+      child: (
+          <> GeeksforGeeks <SiGeeksforgeeks size={30} /> </>
+      ),
+      href: "https://www.geeksforgeeks.org/user/tusharchaurasiya/",
+    },
+    {
+      id: 5,
+      child: (
         <> Mail <HiOutlineMail size={30} /> </>
       ), 
       href: "mailto:yogendrachaurasiya30@gmail.com",
     },
     {
-      id: 4,
+      id: 6,
       child: (
         <> Resume <BsFillPersonLinesFill size={30} /> </>
       ), 
@@ -61,9 +76,9 @@ const Contact = () => {
   ];
 
   return (
-    <div name='Contact' className='w-full max-h-fit bg-[#FFFFF0] p-4 text-gray-800'>
+    <div name='Contact' className='w-full max-h-fit bg-[#FFFFF0] py-8 text-gray-800'>
       <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
-        <div className='pb-8'>
+        <div className='pb-4'>
           <p className='text-4xl font-bold inline border-b-4 border-gray-800'>CONTACT</p>
           <p className='py-6'>Drop me a line</p>
         </div>

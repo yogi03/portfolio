@@ -9,6 +9,9 @@
 @layer base {
   html {
     font-family: "Raleway", sans-serif;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    font-weight: 500;
   }
 
   @keyframes fadeIn {

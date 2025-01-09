@@ -31,9 +31,7 @@ const Experience = () => {
     <div name="Experience" className="bg-[#FFFFF0] w-full max-h-fit py-8">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center h-full w-full text-gray-800">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-800 p-2 inline">
-            EXPERIENCE
-          </p>
+          <p className="text-4xl font-bold border-b-4 border-gray-800 inline">EXPERIENCE</p>
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 

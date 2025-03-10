@@ -5,6 +5,7 @@ import online_voting from '../assets/online_voting.png'
 import bi from '../assets/bi.png'
 import social from '../assets/social.png'
 import memoir from '../assets/memoir.png'
+import dict from '../assets/dict.png'
 
 const Portfolio = () => {
   return (
@@ -22,6 +23,18 @@ const Portfolio = () => {
                             <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
                         </a>
                         <a href="https://github.com/BinariIntelligence/BinariIntelligenceWebsite/tree/Yogendra" target="_blank" rel="noopener noreferrer" className='w-1/2'>
+                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div className='shadow-md shadow-gray-600 rounded-lg'>
+                    <img src={dict} alt="Dictionary" className='rounded-md duration-200 hover:scale-105'/>
+                    <div className='flex items-center justify-center'>
+                        <a href="https://drive.google.com/file/d/1PgJEBGIj4tMDumPZSxUj8XL7ckyvoPAO/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" className='w-1/2'>
+                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
+                        </a>
+                        <a href="https://github.com/yogi03/QuickDefine" target="_blank" rel="noopener noreferrer" className='w-1/2'>
                             <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
                         </a>
                     </div>

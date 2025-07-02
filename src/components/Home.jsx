@@ -66,8 +66,7 @@ const Home = () => {
             >
               <Link
                 to='Portfolio'
-                smooth
-                duration={500}
+                smooth={true} duration={1000} offset={-10}
                 className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gray-800 cursor-pointer'
               >
                 Portfolio

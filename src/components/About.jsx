@@ -27,8 +27,8 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Hello, I'm Yogendra Chaurasiya, a Computer Science student at the University of Delhi, set to graduate in 2026 with a B.Sc. (Research). 
-          I am passionate about full-stack web development, software development, C++, Data Structures and Algorithms (DSA) and Python programming. 
+          Hello! I’m Yogendra Chaurasiya, a Computer Science student at the University of Delhi (B.Sc. Research, 2026) with a strong 
+          interest in full-stack development, C++, Python, and data structures and algorithms. 
         </motion.p>
 
         <motion.p
@@ -38,9 +38,22 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          My technical expertise includes React, TailwindCSS, JavaScript, Firebase, Postgres, Firestore and Django demonstrated through my various projects.   
-          I hold certifications in Python Problem Solving from HackerRank, Full Stack Web Development from Udemy, and C++ from CodeChef. 
-          As the Tech Head at 180 Degrees Consulting, I develop and implement technology strategies.
+          I’ve worked on a range of projects—from web platforms to AI-driven tools—using technologies like React, Tailwind CSS, Django, 
+          Firebase, and PostgreSQL. I currently serve as the Cloud Lead at GDG Dyal Singh College, where I enjoy leading initiatives 
+          and collaborating with peers. My professional experience includes internships at Binari Intelligence, where I contributed to 
+          their main website and built test page and dashboard for ed-tech platform.
+        </motion.p>
+
+        <motion.p
+          className='text-md mt-4 leading-relaxed'
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          I hold certifications in Python (HackerRank), Full Stack Web Development (Udemy), C++ (CodeChef), and Generative AI with 
+          Langchain and Huggingface (Udemy). These experiences have helped me build a strong foundation in both machine learning and 
+          deep learning.
         </motion.p>
 
         <motion.p

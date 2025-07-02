@@ -78,7 +78,7 @@ function Navbar() {
             variants={desktopItemVariants}
             className="px-4 cursor-pointer font-bold text-gray-700 hover:scale-105 duration-200"
           >
-            <Link to={link} smooth duration={500}>
+            <Link to={link} smooth={true} duration={1000} offset={-10}>
               {link}
             </Link>
           </motion.li>
@@ -117,7 +117,7 @@ function Navbar() {
                 variants={itemVariants}
                 className="px-4 cursor-pointer font-bold text-gray-700 py-6 text-4xl"
               >
-                <Link onClick={() => setNav(false)} to={link} smooth duration={500}>
+                <Link onClick={() => setNav(false)} to={link} smooth={true} duration={1000} offset={-10}>
                   {link}
                 </Link>
               </motion.li>

@@ -1,7 +1,7 @@
 import React from "react";
-import { IconCloud } from "./IconCloud"; // Ensure this path is correct
+import { motion } from "framer-motion";
+import { IconCloud } from "./IconCloud";
 
-// Define the slugs of the technologies you want to display in the icon cloud
 const iconSlugs = [
   "cplusplus",
   "python",
@@ -28,17 +28,30 @@ const iconSlugs = [
 
 const Experience = () => {
   return (
-    <div name="Experience" className="bg-[#FFFFF0] w-full max-h-fit pt-0 sm:pt-40">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center h-full w-full text-gray-800">
-        <div>
+    <div name="Experience" className="bg-[#FFFFF0] w-full max-h-fit py-8">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full text-gray-800">
+
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <p className="text-4xl font-bold border-b-4 border-gray-800 inline">EXPERIENCE</p>
           <p className="py-6">These are the technologies I've worked with</p>
-        </div>
+        </motion.div>
 
-        {/* Render the dynamic icon cloud */}
-        <div className="flex justify-center items-center">
+        {/* Icon Cloud */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="flex justify-center items-center"
+        >
           <IconCloud iconSlugs={iconSlugs} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import my_image from '../assets/my_image.jpg';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from 'react-scroll';
 
-const words = ["Student", "Programmer", "Developer"];
+const words = ["Student", "Programmer", "Leader", "Developer", "Explorer"];
 
 const Home = () => {
   const [text, setText] = useState('');

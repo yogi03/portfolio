@@ -17,16 +17,22 @@ const projects = [
     code: 'https://github.com/BinariIntelligence/BinariIntelligenceWebsite/tree/Yogendra',
   },
   {
-    img: dict,
-    alt: 'Dictionary',
-    demo: 'https://drive.google.com/file/d/1PgJEBGIj4tMDumPZSxUj8XL7ckyvoPAO/view?usp=drivesdk',
-    code: 'https://github.com/yogi03/QuickDefine',
-  },
-  {
     img: fashion,
     alt: 'Fashion AI',
     demo: 'https://drive.google.com/file/d/16sw5O2vC0MRkaSiiiOnPedag0dgSNNtx/view?usp=sharing',
     code: 'https://github.com/yogi03/fashion-ai',
+  },
+  {
+    img: dict,
+    alt: 'Dictionary',
+    demo: 'https://chromewebstore.google.com/detail/quick-define/ieanhahejpjipfehdbpmbaednkkokhpa?hl=en-GB&utm_source=ext_sidebar',
+    code: 'https://github.com/yogi03/QuickDefine',
+  },
+  {
+    img: cafe,
+    alt: 'Cafe',
+    demo: 'https://cafe-finder-omega.vercel.app/',
+    code: 'https://github.com/yogi03/cafe-finder',
   },
   {
     img: tindog,

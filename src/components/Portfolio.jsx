@@ -8,6 +8,7 @@ import social from '../assets/social.png';
 import memoir from '../assets/memoir.png';
 import dict from '../assets/dict.png';
 import fashion from '../assets/fashion.png';
+import cafe from '../assets/cafe.png';
 
 const projects = [
   {

@@ -4,7 +4,7 @@ import tindog from '../assets/tindog.png';
 import real_estate from '../assets/real_estate.png';
 import online_voting from '../assets/online_voting.png';
 import bi from '../assets/bi.png';
-import social from '../assets/social.png';
+// import social from '../assets/social.png';
 import memoir from '../assets/memoir.png';
 import dict from '../assets/dict.png';
 import fashion from '../assets/fashion.png';
@@ -66,12 +66,12 @@ const projects = [
     demo: 'https://github.com/yogi03/memoir',
     code: 'https://github.com/yogi03/memoir',
   },
-  {
-    img: social,
-    alt: 'Social',
-    demo: 'https://yogi03.github.io/Dice/',
-    code: 'https://github.com/yogi03/Dice',
-  },
+  // {
+  //   img: social,
+  //   alt: 'Social',
+  //   demo: 'https://yogi03.github.io/Dice/',
+  //   code: 'https://github.com/yogi03/Dice',
+  // },
 ];
 
 const Portfolio = () => {

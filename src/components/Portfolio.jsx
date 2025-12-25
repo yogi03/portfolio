@@ -9,8 +9,15 @@ import memoir from '../assets/memoir.png';
 import dict from '../assets/dict.png';
 import fashion from '../assets/fashion.png';
 import cafe from '../assets/cafe.png';
+import loopin from '../assets/loopin.png';
 
 const projects = [
+  {
+    img: loopin,
+    alt: 'loopin',
+    demo: 'https://loopin-dasahboard.vercel.app/',
+    code: 'https://github.com/yogi03/saas-dasahboard',
+  },
   {
     img: bi,
     alt: 'BI',

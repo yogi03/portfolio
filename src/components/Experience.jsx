@@ -3,18 +3,40 @@ import { motion } from "framer-motion";
 import { IconCloud } from "./IconCloud";
 
 const iconSlugs = [
+  // Languages
   "cplusplus",
   "python",
   "html5",
   "css3",
   "javascript",
+
+  // Frontend
   "bootstrap",
   "tailwindcss",
   "react",
+  "nextdotjs",
+
+  // Backend / Framework
   "flask",
   "django",
+
+  // Database
   "mysql",
   "postgresql",
+  "firebase",
+  "firestore",
+  "supabase",
+
+  // AI / ML / LLM
+  "langchain",
+  "huggingface",
+  "tensorflow",
+  "keras",
+  "scikitlearn",
+  "chromadb",
+  "faiss",
+
+  // Tools & DevOps
   "github",
   "visualstudiocode",
   "figma",
@@ -22,8 +44,6 @@ const iconSlugs = [
   "gitlab",
   "netlify",
   "vercel",
-  "firebase",
-  "firestore",
 ];
 
 const Experience = () => {

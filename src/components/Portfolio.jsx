@@ -10,8 +10,15 @@ import dict from '../assets/dict.png';
 import fashion from '../assets/fashion.png';
 import cafe from '../assets/cafe.png';
 import loopin from '../assets/loopin.png';
+import qrparkalert from '../assets/qrparkalert.png';
 
 const projects = [
+  {
+    img: qrparkalert,
+    alt: 'qrparkalert',
+    demo: 'https://qrparkalert.online',
+    code: 'https://github.com/yogi03/MoveMyCar',
+  },
   {
     img: loopin,
     alt: 'loopin',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import tindog from '../assets/tindog.png';
+// import tindog from '../assets/tindog.png';
 import real_estate from '../assets/real_estate.png';
 import online_voting from '../assets/online_voting.png';
 import bi from '../assets/bi.png';
@@ -11,6 +11,8 @@ import fashion from '../assets/fashion.png';
 import cafe from '../assets/cafe.png';
 import loopin from '../assets/loopin.png';
 import qrparkalert from '../assets/qrparkalert.png';
+import convertx from '../assets/convertx.png';
+
 
 const projects = [
   {
@@ -24,6 +26,12 @@ const projects = [
     alt: 'loopin',
     demo: 'https://loopin-dasahboard.vercel.app/',
     code: 'https://github.com/yogi03/saas-dasahboard',
+  },
+  {
+    img: convertx,
+    alt: 'convertx',
+    demo: 'https://jpgconverter.online',
+    code: 'https://github.com/yogi03/converter',
   },
   {
     img: bi,
@@ -49,12 +57,12 @@ const projects = [
     demo: 'https://cafe-finder-omega.vercel.app/',
     code: 'https://github.com/yogi03/cafe-finder',
   },
-  {
-    img: tindog,
-    alt: 'Tindog',
-    demo: 'https://yogi03.github.io/TinDog-Website/',
-    code: 'https://github.com/yogi03/TinDog-Website',
-  },
+  // {
+  //   img: tindog,
+  //   alt: 'Tindog',
+  //   demo: 'https://yogi03.github.io/TinDog-Website/',
+  //   code: 'https://github.com/yogi03/TinDog-Website',
+  // },
   {
     img: real_estate,
     alt: 'Real Estate',

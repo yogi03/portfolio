@@ -12,6 +12,8 @@ import cafe from '../assets/cafe.png';
 import loopin from '../assets/loopin.png';
 import qrparkalert from '../assets/qrparkalert.png';
 import convertx from '../assets/convertx.png';
+import vyom from '../assets/vyom.png';
+import testify from '../assets/testify.png';
 
 
 const projects = [

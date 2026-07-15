@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // import tindog from '../assets/tindog.png';
 import real_estate from '../assets/real_estate.png';
-import online_voting from '../assets/online_voting.png';
+// import online_voting from '../assets/online_voting.png';
 import bi from '../assets/bi.png';
 // import social from '../assets/social.png';
 import memoir from '../assets/memoir.png';

@@ -16,6 +16,18 @@ import convertx from '../assets/convertx.png';
 
 const projects = [
   {
+    img: vyom,
+    alt: 'Vyom Gym & Club',
+    demo: 'https://vyomgymandclub.com',
+    code: 'https://github.com/yogi03/vyomgymandclub',
+  },
+  {
+    img: testify,
+    alt: 'Testify',
+    demo: 'https://testifyproject.vercel.app',
+    code: 'https://github.com/yogi03/testify-backend',
+  },
+  {
     img: qrparkalert,
     alt: 'qrparkalert',
     demo: 'https://qrparkalert.online',
@@ -69,12 +81,12 @@ const projects = [
     demo: 'https://github.com/yogi03/Real-Estate',
     code: 'https://github.com/yogi03/Real-Estate',
   },
-  {
-    img: online_voting,
-    alt: 'Online Voting',
-    demo: 'https://github.com/Rajat2774/OnlineVotingSystem',
-    code: 'https://github.com/Rajat2774/OnlineVotingSystem',
-  },
+  // {
+  //   img: online_voting,
+  //   alt: 'Online Voting',
+  //   demo: 'https://github.com/Rajat2774/OnlineVotingSystem',
+  //   code: 'https://github.com/Rajat2774/OnlineVotingSystem',
+  // },
   {
     img: memoir,
     alt: 'Memoir',

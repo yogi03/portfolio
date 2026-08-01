@@ -1,0 +1,122 @@
+[
+  {
+    "id": "vyom",
+    "title": "VYOM Gym & Club",
+    "category": "SaaS Products",
+    "description": "An all-in-one club management ecosystem for fitness and recreational centers, unifying member registration, swimming pool bookings, cafe POS/inventory, attendance tracking, and biometric device sync into a single dark-themed dashboard.",
+    "challenge": "Replace fragmented, disconnected tools with one unified platform that syncs member status in real time across a biometric access system, handles POS inventory deduction, and automates invoicing/messaging — while staying fast with offline-capable, low-latency reads.",
+    "solution": "Firebase Firestore with persistentLocalCache/IndexedDB for sub-millisecond offline-first loads, paired with Next.js Server Actions. A dedicated integration layer syncs member profiles to the AdviceFit biometric cloud. Cloudinary handles assets, and Meta WhatsApp API plus Resend/Gmail SMTP auto-generate communications.",
+    "tags": ["NEXT.JS", "TYPESCRIPT", "TAILWIND CSS", "SHADCN/UI", "FRAMER MOTION", "FIREBASE FIRESTORE", "FIREBASE AUTH", "RECHARTS", "CLOUDINARY", "BIOMETRIC API", "RESEND API"],
+    "image": "/vyom.png",
+    "liveUrl": "https://vyomgymandclub.com/",
+    "githubUrl": "https://github.com/notyogi/vyomgymandclub"
+  },
+  {
+    "id": "testify",
+    "title": "TESTIFY",
+    "category": "AI Platforms",
+    "description": "Transforms static study material into interactive, personalized mock tests and visual mind maps using RAG and LLMs — with progress tracking that adapts to your weak points.",
+    "challenge": "Turn unstructured study content into grounded, hallucination-free practice tests and visual concept maps, with a pipeline that can parse documents, understand semantic relationships, and generate custom assessments.",
+    "solution": "Documents are parsed, chunked, and embedded into a Qdrant vector store. A LangChain-orchestrated RAG pipeline queries Qdrant for relevant context and feeds it to Groq's low-latency LLM to generate questions and Mermaid.js mind maps. FastAPI serves the backend on Azure.",
+    "tags": ["REACT", "TYPESCRIPT", "TAILWIND CSS", "TANSTACK QUERY", "FIREBASE AUTH", "FASTAPI", "LANGCHAIN", "GROQ", "QDRANT", "HUGGINGFACE", "MERMAID.JS", "AZURE"],
+    "image": "/testify.png",
+    "liveUrl": "https://testifyproject.vercel.app/",
+    "githubUrl": "https://github.com/notyogi/testify-backend"
+  },
+  {
+    "id": "move-my-car",
+    "title": "Move My Car",
+    "category": "Web Apps",
+    "description": "A privacy-first PWA that lets any vehicle owner get notified instantly when they're blocking someone's parking — via a printable QR code that never exposes their phone number.",
+    "challenge": "Enable a stranger to alert a vehicle owner to move their car securely and privately without exposing personal phone numbers, while delivering the notification instantly without an app store download.",
+    "solution": "Each vehicle gets a unique QR code. Scanning it fires a push notification via Firebase Cloud Messaging straight to the owner's device. Supabase Realtime keeps the dashboard live, Razorpay handles billing, and the whole thing ships as an offline-first PWA.",
+    "tags": ["NEXT.JS", "TYPESCRIPT", "TAILWIND CSS", "SUPABASE", "FIREBASE AUTH", "FIREBASE CLOUD MESSAGING", "RAZORPAY", "PWA", "VERCEL"],
+    "image": "/qrparkalert.png",
+    "liveUrl": "https://qrparkalert.online/",
+    "githubUrl": "https://github.com/notyogi/MoveMyCar"
+  },
+  {
+    "id": "loopin",
+    "title": "Loopin Dashboard",
+    "category": "SaaS Products",
+    "description": "A modern dashboard that lets users create projects, generate embeddable feedback widgets, and view incoming user feedback in real time.",
+    "challenge": "Give SaaS builders a way to collect user feedback securely on their own sites with a lightweight embeddable script per project, and a fast, filterable view of incoming feedback data.",
+    "solution": "Each project gets an auto-generated <script> embed tag. Next.js Server Actions handle backend mutations, Drizzle ORM keeps database interactions type-safe, and TanStack Table powers real-time filtering of feedback data.",
+    "tags": ["NEXT.JS", "TYPESCRIPT", "TAILWIND CSS", "SHADCN UI", "CLERK", "DRIZZLE ORM", "TANSTACK TABLE"],
+    "image": "/loopin.png",
+    "liveUrl": "https://loopin-dasahboard.vercel.app/",
+    "githubUrl": "https://github.com/notyogi/saas-dasahboard"
+  },
+  {
+    "id": "fashion-ai",
+    "title": "Fashion AI",
+    "category": "AI Platforms",
+    "description": "An intelligent fashion search system that understands natural language styling queries and recommends compatible products with AI-generated visual pairings.",
+    "challenge": "Move e-commerce fashion search beyond rigid category filters toward genuine style intent — understanding context and visually showing how a product pairs with an outfit.",
+    "solution": "NLP parses natural language queries into style intent. Google Gemini Vision API generates visual previews of outfit pairings, while trend signals are pulled from Google Trends/Instagram. Groq powers fast inference on the Node.js backend.",
+    "tags": ["REACT", "TAILWIND CSS", "FRAMER MOTION", "NODE.JS", "HUGGINGFACE", "GEMINI VISION API", "GROQ", "FIREBASE"],
+    "image": "/fashion.png",
+    "liveUrl": "https://github.com/notyogi/fashion-ai",
+    "githubUrl": "https://github.com/notyogi/fashion-ai"
+  },
+  {
+    "id": "convertx",
+    "title": "ConvertX",
+    "category": "Tools & Utilities",
+    "description": "A modern, responsive converter app for handling unit, currency, and other conversions through a clean, fast, real-time interface.",
+    "challenge": "Build a single lightweight tool that handles multiple conversion categories with instant, accurate results and a UI that feels native on both desktop and mobile.",
+    "solution": "A component-driven React app powered by Vite for fast dev/build cycles. Conversions update in real time as the user types, with source/target selection kept simple and mobile-first.",
+    "tags": ["REACT", "TAILWIND CSS"],
+    "image": "/convertx.png",
+    "liveUrl": "https://jpgconverter.online/",
+    "githubUrl": "https://github.com/notyogi/converter"
+  },
+  {
+    "id": "cafe-finder",
+    "title": "Cafe Finder",
+    "category": "Web Apps",
+    "description": "A React app that helps users discover nearby cafes using the Google Maps Places API — showing them on an interactive map with photos, ratings, and reviews.",
+    "challenge": "Give users a fast, visual way to find cafes near their current location with rich detail (photos, ratings, directions) surfaced through an interactive map and polished popups.",
+    "solution": "Browser geolocation detects the user's position, and Google Places Autocomplete powers location search. Cafe markers render on an interactive Google Map, animating a popup with a photo carousel and reviews.",
+    "tags": ["REACT", "TAILWIND CSS", "GOOGLE MAPS API", "GOOGLE PLACES API", "FRAMER MOTION"],
+    "image": "/cafe.png",
+    "liveUrl": "https://cafe-finder-omega.vercel.app/",
+    "githubUrl": "https://github.com/notyogi/cafe-finder"
+  },
+  {
+    "id": "quickdefine",
+    "title": "QuickDefine",
+    "category": "Tools & Utilities",
+    "description": "A lightweight Chrome extension that shows a word's definition and example usage in a popup the moment you double-click it while browsing.",
+    "challenge": "Let users look up unfamiliar words without breaking their reading flow or switching tabs — just a fast popup triggered by a natural browsing gesture.",
+    "solution": "A double-click event listener captures the selected word and queries the Dictionary API for its definition and example sentence, rendering both in a clean, minimal popup.",
+    "tags": ["JAVASCRIPT", "DICTIONARY API"],
+    "image": "/dict.png",
+    "liveUrl": "https://chromewebstore.google.com/detail/quick-define/ieanhahejpjipfehdbpmbaednkkokhpa",
+    "githubUrl": "https://github.com/notyogi/QuickDefine"
+  },
+  {
+    "id": "together",
+    "title": "Together",
+    "category": "Blockchain",
+    "description": "A decentralized crowdfunding platform where users launch campaigns, fund them with ETH, and funds are strictly released on-chain only if goals are met.",
+    "challenge": "Build a trustless crowdfunding system where fund release isn't controlled by a platform operator but by contract logic itself, verifiable on-chain.",
+    "solution": "A Solidity smart contract deployed on Ethereum Sepolia handles campaign creation, donation tracking, and fund-claiming logic. The React frontend connects via Ethers.js and MetaMask.",
+    "tags": ["SOLIDITY", "HARDHAT", "ETHERS.JS V6", "ETHEREUM SEPOLIA", "METAMASK", "REACT", "TAILWIND CSS"],
+    "image": "/together.png",
+    "liveUrl": "https://togetherwith.vercel.app/",
+    "githubUrl": "https://github.com/notyogi/crowdfundingplatform"
+  },
+  {
+    "id": "churn-prediction",
+    "title": "Customer Churn Prediction",
+    "category": "AI Platforms",
+    "description": "A deep learning app that predicts whether a bank customer is likely to churn, using an Artificial Neural Network served through an interactive Streamlit interface.",
+    "challenge": "Turn raw customer profile data into a reliable churn probability using a tuned neural network architecture, made accessible through a no-code interface.",
+    "solution": "A feed-forward ANN trained on ~10K customer records using TensorFlow/Keras. The model and scalers are serialized so the Streamlit app can transform new input and provide real-time predictions.",
+    "tags": ["PYTHON", "TENSORFLOW", "KERAS", "SCIKIT-LEARN", "PANDAS", "NUMPY", "STREAMLIT"],
+    "image": "/churn-rate.png",
+    "liveUrl": "https://customer-churn-prediction30.streamlit.app/",
+    "githubUrl": "https://github.com/notyogi/ANN-Classification-Customer-Churn-Prediction"
+  }
+]

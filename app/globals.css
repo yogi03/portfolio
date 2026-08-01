@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light tech minimalist theme */
+:root {
+  --background: #D5CFBE;
+  --background-alt: #DCDBCA;
+  --foreground: #18181A; /* Grayish off-black */
+  --accent: #FFFF22; /* Yellow accent */
+  --accent-foreground: #18181A; /* Dark text for contrast on yellow */
+  --scrollbar-track: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb: #FFFF22;
+}
+
+/* Dark tech minimalist theme */
+.dark {
+  --background: #18181A; /* Grayish off-black */
+  --background-alt: #1F1F22; /* Slightly lighter charcoal */
+  --foreground: #F9F6F0; /* Cream/Milk off-white */
+  --accent: #FFFF22; /* Yellow accent */
+  --accent-foreground: #18181A;
+  --scrollbar-track: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb: #FFFF22;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-geist-sans);
+}
+
+@utility glass-panel {
+  background-color: rgba(9, 9, 11, 0.7); /* solid fallback */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Text Selection */
+::selection {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+  border-left: 1px solid var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 0; /* Keeping with flat theme */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+
+
+/* --- Theme Toggle View Transitions --- */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Going to Dark Mode: New dark state grows from Top-Right (100% 0%) */
+.dark::view-transition-new(root) {
+  animation: wipe-top-right 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Going to Light Mode: New light state grows from Bottom-Left (0% 100%) */
+:root:not(.dark)::view-transition-new(root) {
+  animation: wipe-bottom-left 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes wipe-top-right {
+  from { clip-path: circle(0% at 100% 0%); }
+  to { clip-path: circle(150% at 100% 0%); }
+}
+
+@keyframes wipe-bottom-left {
+  from { clip-path: circle(0% at 0% 100%); }
+  to { clip-path: circle(150% at 0% 100%); }
+}
+
+/* Cal.com Embed Backdrop Blur */
+cal-modal, 
+cal-overlay,
+.cal-overlay,
+.cal-embed-overlay,
+dialog {
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  background-color: rgba(9, 9, 11, 0.4) !important;
+}

@@ -9,6 +9,7 @@ import { Toaster } from "sonner";
 
 import TargetCursor from "@/components/TargetCursor";
 import Particles from "@/components/Particles";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Yogi",
@@ -61,6 +62,7 @@ export default function RootLayout({
             </div>
           </SmoothScroll>
           <Toaster duration={5000} position="bottom-right" toastOptions={{ style: { background: 'var(--background)', color: 'var(--foreground)', border: '1px solid var(--accent)' } }} />
+          <Analytics />
       </body>
     </html>
   );

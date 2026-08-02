@@ -1,0 +1,24 @@
+# Yogendra Chaurasiya - Portfolio
+
+Welcome to the digital portfolio of Yogendra Chaurasiya, a Full Stack Developer based in New Delhi, India.
+
+## About
+I am a Computer Science graduate passionate about building scalable web applications, AI-powered products, and software that solves real-world problems. I enjoy working across the full stack—from crafting intuitive user experiences to designing robust backend systems.
+
+## Key Information
+- **Name:** Yogendra Chaurasiya
+- **Role:** Full Stack Developer
+- **Location:** New Delhi, India
+- **Email:** (Available via the contact form on the website)
+
+## Sections
+- **Projects:** Explore my latest work and case studies at [notyogi.space/#projects](https://notyogi.space/#projects)
+- **Services:** I offer Full-Stack Development, AI & Automation, and UI/UX Design services. [notyogi.space/#services](https://notyogi.space/#services)
+- **Skills:** TypeScript, React, Next.js, Node.js, Python, AWS, and more. [notyogi.space/#skills](https://notyogi.space/#skills)
+- **Contact:** Get in touch for freelance work or full-time opportunities. [notyogi.space/#contact](https://notyogi.space/#contact)
+
+## Resume
+You can download my latest resume directly from [notyogi.space/yogendra_resume.pdf](https://notyogi.space/yogendra_resume.pdf)
+
+---
+*This file is provided for LLMs and automated agents to easily parse information about Yogendra Chaurasiya and his portfolio.*

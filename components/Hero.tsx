@@ -13,8 +13,10 @@ export function Hero() {
   
 
   useEffect(() => {
-    (async function () {
+    let mounted = true;
+    const init = async () => {
       const cal = await getCalApi();
+      if (!mounted) return;
       cal("ui", {
         theme: "dark",
         cssVarsPerTheme: {
@@ -25,7 +27,15 @@ export function Hero() {
         hideEventTypeDetails: false,
         layout: "month_view"
       });
-    })();
+    };
+    
+    // Defer initialization to avoid blocking initial render, but ensure it's ready before click
+    const timer = setTimeout(init, 2500);
+    
+    return () => {
+      mounted = false;
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -92,6 +102,7 @@ export function Hero() {
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
             priority
+            fetchPriority="high"
           />
         </motion.div>
 

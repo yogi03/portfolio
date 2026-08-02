@@ -2,13 +2,9 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-import { SmoothScroll } from "@/components/SmoothScroll";
 import { Footer } from "@/components/Footer";
 import { Toaster } from "sonner";
-
-
-import TargetCursor from "@/components/TargetCursor";
-import Particles from "@/components/Particles";
+import { SmoothScroll, TargetCursor, Particles } from "@/components/ClientWrappers";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {

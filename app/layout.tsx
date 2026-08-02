@@ -12,6 +12,7 @@ import Particles from "@/components/Particles";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://notyogi.space"),
   title: "Yogi",
   description: "Software Developer Portfolio of Yogendra Chaurasiya",
 };

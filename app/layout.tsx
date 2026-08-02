@@ -9,13 +9,14 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://notyogi.space"),
-  title: "Yogi",
+  title: "Yogendra Chaurasiya | Full Stack Developer",
   description: "Software Developer Portfolio of Yogendra Chaurasiya",
+  keywords: ["Yogendra Chaurasiya", "Yogi", "Software Developer", "Full Stack Developer", "Delhi", "India", "React", "Next.js", "Portfolio"],
   openGraph: {
-    title: "Yogi | Software Developer",
+    title: "Yogendra Chaurasiya | Full Stack Developer",
     description: "Software Developer Portfolio of Yogendra Chaurasiya",
     url: "https://notyogi.space",
-    siteName: "Yogi",
+    siteName: "Yogendra Chaurasiya",
     images: [
       {
         url: "/opengraph-image.jpg", // Add your OG image to the public folder
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yogi | Software Developer",
+    title: "Yogendra Chaurasiya | Full Stack Developer",
     description: "Software Developer Portfolio of Yogendra Chaurasiya",
     images: ["/opengraph-image.jpg"],
   },
@@ -82,6 +83,24 @@ export default function RootLayout({
           </SmoothScroll>
           <Toaster duration={5000} position="bottom-right" toastOptions={{ style: { background: 'var(--background)', color: 'var(--foreground)', border: '1px solid var(--accent)' } }} />
           <Analytics />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Yogendra Chaurasiya",
+                "url": "https://notyogi.space",
+                "sameAs": [
+                  "https://www.linkedin.com/in/yogendra30/",
+                  "https://www.instagram.com/tushar__chaurasiya?igsh=MWU4NmgyM3JvdXF5Yw==",
+                  "https://x.com/notyogi_",
+                  "https://github.com/notyogi"
+                ],
+                "jobTitle": "Full Stack Developer"
+              })
+            }}
+          />
       </body>
     </html>
   );

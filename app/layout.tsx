@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Yogi",
     images: [
       {
-        url: "/opengraph-image.png", // Add your OG image to the public folder
+        url: "/opengraph-image.jpg", // Add your OG image to the public folder
         width: 1200,
         height: 630,
         alt: "Yogendra Chaurasiya Portfolio",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yogi | Software Developer",
     description: "Software Developer Portfolio of Yogendra Chaurasiya",
-    images: ["/opengraph-image.png"],
+    images: ["/opengraph-image.jpg"],
   },
 };
 

@@ -11,6 +11,28 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://notyogi.space"),
   title: "Yogi",
   description: "Software Developer Portfolio of Yogendra Chaurasiya",
+  openGraph: {
+    title: "Yogi | Software Developer",
+    description: "Software Developer Portfolio of Yogendra Chaurasiya",
+    url: "https://notyogi.space",
+    siteName: "Yogi",
+    images: [
+      {
+        url: "/opengraph-image.png", // Add your OG image to the public folder
+        width: 1200,
+        height: 630,
+        alt: "Yogendra Chaurasiya Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yogi | Software Developer",
+    description: "Software Developer Portfolio of Yogendra Chaurasiya",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({

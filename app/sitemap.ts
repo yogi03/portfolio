@@ -1,7 +1,6 @@
 import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
-import projectsData from "../content/projects.json";
 
 function getStaticRoutes(dir: string, basePath: string = ""): string[] {
   let routes: string[] = [];
@@ -50,12 +49,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  const dynamicRoutes: MetadataRoute.Sitemap = projectsData.map((project) => ({
-    url: `${baseUrl}/projects/${project.id}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
-
-  return [...staticRoutes, ...dynamicRoutes];
+  return staticRoutes;
 }

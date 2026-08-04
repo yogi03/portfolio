@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, Code } from "lucide-react";
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import MailIcon from "@/components/icons/mail-filled-icon";
+import GithubIcon from "@/components/icons/github-icon";
+import LinkedinIcon from "@/components/icons/linkedin-icon";
+import XIcon from "@/components/icons/twitter-x-icon";
+import LinkIcon from "@/components/icons/link-icon";
 import { LogoIcon } from "./LogoIcon";
 
 export function Footer() {
@@ -27,41 +30,41 @@ export function Footer() {
           <Link 
             href="https://github.com/notyogi" 
             target="_blank" 
-            className="p-2 transition-colors text-foreground/60 hover:text-foreground"
+            className="p-2 transition-colors text-foreground/60 hover:text-foreground group"
             aria-label="GitHub"
           >
-            <FaGithub size={20} />
+            <GithubIcon size={20} className="group-hover:text-accent transition-colors" />
           </Link>
           <Link 
             href="https://www.linkedin.com/in/yogendra30" 
             target="_blank" 
-            className="p-2 transition-colors text-foreground/60 hover:text-foreground"
+            className="p-2 transition-colors text-foreground/60 hover:text-foreground group"
             aria-label="LinkedIn"
           >
-            <FaLinkedin size={20} />
+            <LinkedinIcon size={20} className="group-hover:text-accent transition-colors" />
           </Link>
           <Link 
             href="https://x.com/notyogi_" 
             target="_blank"
-            className="p-2 transition-colors text-foreground/60 hover:text-foreground"
+            className="p-2 transition-colors text-foreground/60 hover:text-foreground group"
             aria-label="X (Twitter)"
           >
-            <FaXTwitter size={20} />
+            <XIcon size={20} className="group-hover:text-accent transition-colors" />
           </Link>
           <Link 
             href="https://leetcode.com/u/yogi30/" 
             target="_blank" 
-            className="p-2 transition-colors text-foreground/60 hover:text-foreground"
+            className="p-2 transition-colors text-foreground/60 hover:text-foreground group"
             aria-label="LeetCode"
           >
-            <Code size={20} />
+            <LinkIcon size={20} className="group-hover:text-accent transition-colors" />
           </Link>
           <Link 
             href="mailto:yogendrachaurasiya30@gmail.com" 
-            className="p-2 transition-colors text-foreground/60 hover:text-foreground"
+            className="p-2 transition-colors text-foreground/60 hover:text-foreground group"
             aria-label="Email"
           >
-            <Mail size={20} />
+            <MailIcon size={20} className="group-hover:text-accent transition-colors" />
           </Link>
         </div>
 

@@ -2,8 +2,11 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Mail } from "lucide-react";
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import SendIcon from "@/components/icons/send-icon";
+import MailIcon from "@/components/icons/mail-filled-icon";
+import GithubIcon from "@/components/icons/github-icon";
+import LinkedinIcon from "@/components/icons/linkedin-icon";
+import XIcon from "@/components/icons/twitter-x-icon";
 import Link from "next/link";
 import { toast } from "sonner";
 import { GlassCard } from "./GlassCard";
@@ -68,34 +71,34 @@ export function ContactSection() {
             <div className="flex items-center gap-4">
               <Link 
                 href="mailto:yogendrachaurasiya30@gmail.com" 
-                className="p-4 border border-foreground/20 hover:bg-foreground/10 active:scale-[0.98] transition-all duration-300 text-foreground"
+                className="p-4 border border-foreground/20 hover:bg-foreground/10 active:scale-[0.98] transition-all duration-300 text-foreground group"
                 aria-label="Email"
               >
-                <Mail size={24} />
+                <MailIcon size={24} className="group-hover:text-accent transition-colors" />
               </Link>
               <Link 
                 href="https://github.com/notyogi" 
                 target="_blank"
-                className="p-4 border border-foreground/20 hover:bg-foreground/10 active:scale-[0.98] transition-all duration-300 text-foreground"
+                className="p-4 border border-foreground/20 hover:bg-foreground/10 active:scale-[0.98] transition-all duration-300 text-foreground group"
                 aria-label="GitHub"
               >
-                <FaGithub size={24} />
+                <GithubIcon size={24} className="group-hover:text-accent transition-colors" />
               </Link>
               <Link 
                 href="https://www.linkedin.com/in/yogendra30" 
                 target="_blank"
-                className="p-4 border border-foreground/20 hover:bg-foreground/10 active:scale-[0.98] transition-all duration-300 text-foreground"
+                className="p-4 border border-foreground/20 hover:bg-foreground/10 active:scale-[0.98] transition-all duration-300 text-foreground group"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin size={24} />
+                <LinkedinIcon size={24} className="group-hover:text-accent transition-colors" />
               </Link>
               <Link 
                 href="https://x.com/notyogi_" 
                 target="_blank"
-                className="p-4 border border-foreground/20 hover:bg-foreground/10 active:scale-[0.98] transition-all duration-300 text-foreground"
+                className="p-4 border border-foreground/20 hover:bg-foreground/10 active:scale-[0.98] transition-all duration-300 text-foreground group"
                 aria-label="X (Twitter)"
               >
-                <FaXTwitter size={24} />
+                <XIcon size={24} className="group-hover:text-accent transition-colors" />
               </Link>
             </div>
           </motion.div>
@@ -162,7 +165,7 @@ export function ContactSection() {
                     </span>
                   ) : (
                     <span className="flex items-center gap-2">
-                      Send Message <Send size={18} />
+                      Send Message <SendIcon size={18} />
                     </span>
                   )}
                 </Button>

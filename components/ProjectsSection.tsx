@@ -8,7 +8,8 @@ import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 import Link from "next/link";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import ExternalLinkIcon from "@/components/icons/external-link-icon";
 import { FaGithub } from "react-icons/fa";
 import { SectionHeading } from "./SectionHeading";
 import { SkillPill } from "./SkillPill";
@@ -74,7 +75,7 @@ function ProjectCard({ project, colSpan, isExpanded, toggleExpand }: { project: 
           )}
           {project.liveUrl && project.liveUrl !== "#" && (
             <Link href={project.liveUrl} target="_blank" className="text-foreground/40 hover:text-foreground transition-colors">
-              <ExternalLink size={20} />
+              <ExternalLinkIcon size={20} />
             </Link>
           )}
         </div>
@@ -108,7 +109,7 @@ function ProjectCard({ project, colSpan, isExpanded, toggleExpand }: { project: 
             <div className="flex flex-col sm:flex-row items-center gap-4">
               {project.liveUrl && project.liveUrl !== "#" && (
                 <Link href={project.liveUrl} target="_blank" className="w-full sm:w-auto flex-1 flex items-center justify-center gap-3 py-3 px-6 bg-foreground text-background font-medium hover:bg-foreground/90 active:scale-[0.98] transition-all">
-                  <ExternalLink size={18} /> Live Demo
+                  <ExternalLinkIcon size={18} /> Live Demo
                 </Link>
               )}
               {project.githubUrl && project.githubUrl !== "#" && (

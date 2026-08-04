@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
+import XIcon from "@/components/icons/x-icon";
 import { motion, AnimatePresence } from "framer-motion";
 import { LogoIcon } from "./LogoIcon";
 
@@ -99,7 +100,7 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle mobile menu"
             >
-              {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              {mobileMenuOpen ? <XIcon size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>

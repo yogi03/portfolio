@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Send, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
+import XIcon from "@/components/icons/x-icon";
+import SendIcon from "@/components/icons/send-icon";
 import { toast } from "sonner";
 import { Button } from "./Button";
 import { GlassCard } from "./GlassCard";
@@ -72,7 +74,7 @@ export function ServiceInquiryModal({ isOpen, onClose, serviceTitle }: ServiceIn
                 onClick={onClose}
                 className="absolute top-6 right-6 text-foreground/50 hover:text-foreground transition-colors"
               >
-                <X size={20} />
+                <XIcon size={20} />
               </button>
 
               <div>
@@ -128,7 +130,7 @@ export function ServiceInquiryModal({ isOpen, onClose, serviceTitle }: ServiceIn
                     "Sending..."
                   ) : (
                     <>
-                      Send Inquiry <Send size={16} />
+                      Send Inquiry <SendIcon size={16} />
                     </>
                   )}
                 </Button>

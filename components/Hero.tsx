@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 import { Button } from "./Button";
 import Image from "next/image";
-import { MapPin } from "lucide-react";
+import MapPinIcon from "@/components/icons/map-pin-icon";
 import { getCalApi } from "@calcom/embed-react";
 import DecryptedText from "./DecryptedText";
 
@@ -46,10 +46,11 @@ export function Hero() {
         <div className="flex flex-col justify-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="flex items-center gap-2 text-foreground/60 mb-6 uppercase tracking-wider text-xs font-mono"
           >
-            <MapPin size={14} className="text-accent" />
+            <MapPinIcon size={14} className="text-accent" />
             <span>New Delhi, India</span>
           </motion.div>
 

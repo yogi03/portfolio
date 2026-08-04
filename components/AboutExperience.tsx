@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "./SectionHeading";
 import { Button } from "./Button";
 import { GlassCard } from "./GlassCard";
-import { Download, GraduationCap, Briefcase } from "lucide-react";
+import { GraduationCap, Briefcase } from "lucide-react";
+import DownloadIcon from "@/components/icons/download-icon";
 
 const timeline = [
   {
@@ -66,7 +67,7 @@ export function AboutExperience() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             >
               <Button variant="primary" href="/yogendra_resume.pdf" target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2" size={18} />
+                <DownloadIcon className="mr-2" size={18} />
                 Download Resume
               </Button>
             </motion.div>
